@@ -50,6 +50,13 @@ A deep learning-based project to detect **Diabetic Retinopathy (DR)** from retin
 
 > 🔍 Binary classification between "No DR" and "DR" showed better accuracy due to data skew
 
+## 🎥 Demo Video
+
+[![Watch the demo](https://img.shields.io/badge/Click_to_Play-Demo_Video-blue?style=for-the-badge&logo=video)](diabetic.mp4)
+
+> 📌 *Click the button above to view or download the video showcasing the project pipeline and predictions.*
+
+
 ---
 
 ## 📌 What We Learned
