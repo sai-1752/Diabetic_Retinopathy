@@ -1,67 +1,107 @@
 # 🩺 Diabetic Retinopathy Detection using Deep Learning
 
-A deep learning-based approach for detecting **Diabetic Retinopathy** using fundus eye images. The project uses a **CNN model** to classify the severity of DR, aiming to support early detection and treatment.
+A deep learning-based project to detect **Diabetic Retinopathy (DR)** from retinal fundus images using **Convolutional Neural Networks (CNNs)**. The goal is to automate early diagnosis and assist ophthalmologists in identifying DR severity efficiently.
 
 ---
 
-## 🚀 Tools Used
+## 📁 Table of Contents
 
-- 🐍 **Python**
-- 🧠 **TensorFlow / Keras** – Building and training deep learning models
-- 🖼️ **OpenCV** – Image processing and enhancement
-- 📊 **Matplotlib / Seaborn** – Visualization of results
+- [🚀 Tools & Technologies Used](#-tools--technologies-used)
+- [🧠 Problem Statement](#-problem-statement)
+- [📊 Results & Insights](#-results--insights)
+- [📌 What We Learned](#-what-we-learned)
+- [⚠️ Challenges Faced](#-challenges-faced)
+- [✅ Conclusion](#-conclusion)
+- [👨‍💻 Team Contribution](#-team-contribution)
+- [📂 Dataset & References](#-dataset--references)
+
+---
+
+## 🚀 Tools & Technologies Used
+
+- 🐍 **Python 3**
+- 🧠 **TensorFlow / Keras** – Model building and training
+- 🖼️ **OpenCV** – Image preprocessing
+- 📊 **Matplotlib / Seaborn** – Visualization
 - 📁 **NumPy / Pandas** – Data manipulation
-- 💻 **Google Colab** – GPU-accelerated training environment
+- 💻 **Google Colab** – GPU-accelerated training
 - 📦 **Dataset** – [APTOS 2019 Blindness Detection](https://www.kaggle.com/competitions/aptos2019-blindness-detection)
+
+---
+
+## 🧠 Problem Statement
+
+> Diabetic Retinopathy is one of the leading causes of blindness globally. Early detection is essential to prevent severe complications.  
+> This project aims to build a machine learning model that can classify fundus images into 5 stages of diabetic retinopathy, from healthy to severe cases.
 
 ---
 
 ## 📊 Results & Insights
 
-- ✅ Successfully built a **multi-class CNN model** to detect DR stages (0–4)
-- 🧪 Used **image preprocessing**, **data augmentation**, and **class balancing** to improve accuracy
-- 📉 Applied **early stopping** and **dropout** to prevent overfitting
-- 🔍 Found better performance on binary classification compared to multi-class (due to class imbalance)
+- 🧪 Developed a **multi-class CNN model** to classify DR stages (0–4)
+- 📈 Applied **data augmentation**, **class balancing**, **dropout**, and **early stopping**
+- 📊 Achieved promising results despite data imbalance
 
-| Metric | Value (Example) |
-|--------|-----------------|
-| ✅ Training Accuracy | 85% |
-| 📉 Validation Accuracy | 76% |
-| 🧪 Test Accuracy | ~72% |
+| Metric              | Value (Example) |
+|---------------------|-----------------|
+| ✅ Training Accuracy | 85%             |
+| 📉 Validation Accuracy | 76%          |
+| 🧪 Test Accuracy     | ~72%            |
 
-
+> 🔍 Binary classification between "No DR" and "DR" showed better accuracy due to data skew
 
 ---
 
-## 🧠 What I Learned
+## 📌 What We Learned
 
-- 📚 How to work with **medical imaging datasets** and apply CNNs to classify them
-- 🧪 Applied **data augmentation** techniques to overcome class imbalance
-- 🧠 Gained deeper understanding of **convolutional layers**, **regularization**, and **dropout**
-- ⚙️ End-to-end pipeline from data preprocessing to model evaluation
+- Building CNNs for medical image classification tasks  
+- Importance of **image preprocessing** and **augmentation**  
+- Handling **class imbalance** in real-world datasets  
+- Optimizing model performance with **regularization** techniques  
+- Collaborative workflow using **Git/GitHub** and **Colab Notebooks**
 
 ---
 
 ## ⚠️ Challenges Faced
 
-- ⚖️ **Severe class imbalance** made it difficult for the model to generalize
-- 🔁 Overfitting occurred in early versions of the model before applying regularization
-- 🌫️ Image quality issues like blur and noise affected model performance
-- 🕒 Long training times due to high-resolution images and dataset size
+- ⚖️ **Highly Imbalanced Dataset** – Most images belonged to Class 0 (No DR)  
+- 🌫️ **Variable Image Quality** – Affected consistency in training  
+- 🔁 **Overfitting** – Resolved using dropout, augmentation, and early stopping  
+- ⏱️ **Training Time** – High-resolution images increased compute needs
 
 ---
 
 ## ✅ Conclusion
 
-- This project highlights how **deep learning can aid in early DR detection**.
-- Though the results are promising, real-world applications require:
-  - 🔁 **Transfer learning** (e.g., EfficientNet, Inception)
-  - 🧠 **Ensemble techniques**
-  - 🧪 Further testing and validation with real clinical data
+This project demonstrated how **deep learning** can support healthcare by detecting diabetic retinopathy with promising accuracy.  
+Further improvements can be made by:
+- 🔁 Implementing **transfer learning** (EfficientNet, Inception)
+- 📦 Using **segmentation + classification pipelines**
+- 🔍 Validating on real-world clinical datasets
 
 ---
 
-## 📂 Dataset and References
+## 👨‍💻 Team Contribution
 
-- 📥 **Dataset**: [APTOS 2019 Blindness Detection](https://www.kaggle.com/competitions/aptos2019-blindness-detection)
-- 📄 **Research Paper**: [Deep Learning for Detection of Diabetic Eye Disease](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6381472/)
+A team of 5 passionate students collaboratively completed this project:
+
+- 👤 **Sai Balaji** – Model development, preprocessing pipeline  
+- 👤 **Vandana** – Data cleaning, augmentation strategy  
+- 👤 **Raj Kamal** – Exploratory data analysis, visualizations  
+- 👤 **Nikitha** – Hyperparameter tuning, training loops  
+- 👤 **Preetham** – GitHub repo management, presentation & documentation  
+
+> 🙌 Each team member contributed equally to research, coding, debugging, and model improvement.
+
+---
+
+## 📂 Dataset & References
+
+- 📥 Dataset: [APTOS 2019 Blindness Detection – Kaggle](https://www.kaggle.com/competitions/aptos2019-blindness-detection)
+- 📄 Paper: [Deep Learning for Detection of Diabetic Eye Disease](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6381472/)
+- 📚 Further Reading: [Retinopathy on Wikipedia](https://en.wikipedia.org/wiki/Diabetic_retinopathy)
+
+---
+
+> 📌 *For questions, collaboration, or feedback, feel free to open an issue or reach out via GitHub!*
+
