@@ -29,7 +29,7 @@ A deep learning-based approach for detecting **Diabetic Retinopathy** using fund
 | 📉 Validation Accuracy | 76% |
 | 🧪 Test Accuracy | ~72% |
 
-> 📈 *(Add your actual training/validation graph as an image if available)*
+
 
 ---
 
